@@ -16,6 +16,7 @@
 		6A3D90502C5986C60023BD44 /* PlusArchiverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D904F2C5986C60023BD44 /* PlusArchiverTests.swift */; };
 		6A3D905A2C5986C60023BD44 /* PlusArchiverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D90592C5986C60023BD44 /* PlusArchiverUITests.swift */; };
 		6A3D905C2C5986C60023BD44 /* PlusArchiverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D905B2C5986C60023BD44 /* PlusArchiverUITestsLaunchTests.swift */; };
+		6AA4B16E2C59877000FFA540 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA4B16D2C59877000FFA540 /* Zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA4B16E2C59877000FFA540 /* Zip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = PlusArchiver;
+			packageProductDependencies = (
+				6AA4B16D2C59877000FFA540 /* Zip */,
+			);
 			productName = PlusArchiver;
 			productReference = 6A3D90352C5986C50023BD44 /* PlusArchiver.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 6A3D902C2C5986C50023BD44;
+			packageReferences = (
+				6A3D90682C5987210023BD44 /* XCRemoteSwiftPackageReference "Zip" */,
+			);
 			productRefGroup = 6A3D90362C5986C50023BD44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -589,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A3D90682C5987210023BD44 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AA4B16D2C59877000FFA540 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A3D90682C5987210023BD44 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6A3D90432C5986C60023BD44 /* PlusArchiver.xcdatamodeld */ = {
